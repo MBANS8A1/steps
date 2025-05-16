@@ -1,14 +1,28 @@
+const messages = [
+  "Learn React ⚛️",
+  "Apply for jobs 💼",
+  "Invest your new income 🤑",
+];
+
 export default function App() {
+  const step = 1;
   return (
     <div className="steps">
       <div className="numbers">
-        <div>1</div>
+        <div className="active">1</div>
         <div>2</div>
         <div>3</div>
       </div>
 
-      <p className="message">Hello Test Message</p>
-      <div className="buttons"></div>
+      <p className="message"></p>
+      <div className="buttons">
+        <button style={{ backgroundColor: "#7950f2", color: "#ffffff" }}>
+          Previous
+        </button>
+        <button style={{ backgroundColor: "#7950f2", color: "#ffffff" }}>
+          Next
+        </button>
+      </div>
     </div>
   );
 }
