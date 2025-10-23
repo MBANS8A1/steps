@@ -54,4 +54,11 @@ export default function App() {
   );
 }
 
-function Button() {}
+function Button({ textColor, bgColour, onClick, text }) {
+  <button
+    style={{ backgroundColor: "#7950f2", color: "#ffffff" }}
+    onClick={handleNext}
+  >
+    text
+  </button>;
+}
