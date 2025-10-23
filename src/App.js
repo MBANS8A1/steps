@@ -62,10 +62,12 @@ function StepMessage({ step, children }) {
 }
 
 function Button({ textColor, bgColor, onClick, children }) {
-  <button
-    style={{ backgroundColor: bgColor, color: textColor }}
-    onClick={onClick}
-  >
-    {children}
-  </button>;
+  return (
+    <button
+      style={{ backgroundColor: bgColor, color: textColor }}
+      onClick={onClick}
+    >
+      {children}
+    </button>
+  );
 }
