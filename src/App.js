@@ -32,7 +32,7 @@ export default function App() {
           </div>
 
           <p className="message">
-            Step {step}: {messages[step - 1]}
+            <h3>Step {step}</h3>:{messages[step - 1]}
           </p>
           <div className="buttons">
             <Button
@@ -51,6 +51,12 @@ export default function App() {
       )}
     </>
   );
+}
+
+function StepMessage() {
+  <p className="message">
+    <h3>Step {step}</h3>:{messages[step - 1]}
+  </p>;
 }
 
 function Button({ textColor, bgColor, onClick, children }) {
