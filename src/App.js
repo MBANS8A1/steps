@@ -53,9 +53,9 @@ export default function App() {
   );
 }
 
-function StepMessage() {
+function StepMessage({ step, children }) {
   <p className="message">
-    <h3>Step {step}</h3>:{messages[step - 1]}
+    <h3>Step {step}</h3> {children}
   </p>;
 }
 
